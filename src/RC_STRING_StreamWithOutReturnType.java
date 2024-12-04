@@ -1,4 +1,4 @@
-public class RC_STRING_Stream {
+public class RC_STRING_StreamWithOutReturnType {
 
     public static void main(String[] args) {
 

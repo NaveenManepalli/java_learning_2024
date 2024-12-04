@@ -1,4 +1,4 @@
-public class RC_BackTracking_NQueensSudokuSolver {
+public class RC_BackTracking_NQueensSudokuSolver_37 {
     public static void main(String[] args) {
         int[][] board = new int[][]{
                 {3, 0, 6, 5, 0, 8, 4, 0, 0},

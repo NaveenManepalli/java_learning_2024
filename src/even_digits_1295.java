@@ -1,6 +1,6 @@
 // leet problem number (1295. Find Numbers With In Even Number Of Digits)
 
-public  class even_digits {
+public  class even_digits_1295 {
 
     public static void main(String[]args){
 

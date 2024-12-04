@@ -1,4 +1,4 @@
-package com.kunal.staticExample;
+package oops.introduction.staticExample;
 
 public class Main {
     public static void main(String[] args) {

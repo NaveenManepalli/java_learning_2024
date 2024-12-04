@@ -1,8 +1,4 @@
-package com.kunal.introduction;
-
-import java.sql.Struct;
-import java.util.ArrayList;
-import java.util.Arrays;
+package oops.introduction.introduction;
 
 public class Main {
     public static void main(String[] args) {

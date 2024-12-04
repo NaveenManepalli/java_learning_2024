@@ -1,4 +1,4 @@
-package com.kunal.staticExample;
+package oops.introduction.staticExample;
 
 import java.util.Arrays;
 

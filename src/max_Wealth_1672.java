@@ -1,6 +1,6 @@
 //(1672. Richest Customer Wealth)
 
-public class max_Wealth {
+public class max_Wealth_1672 {
     public static void main(String[] args) {
 
         int[][] accounts = { {1,2,3},{9,3,0}};

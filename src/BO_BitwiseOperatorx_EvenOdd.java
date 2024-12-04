@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
-
 public class BO_BitwiseOperatorx_EvenOdd {
+    public static void main(String[] args) {
+
+        int n = 43;
+        System.out.println(isOdd(n));
+    }
+    private static boolean isOdd(int n){
+        return (n & 1)==1;
+    }
 }

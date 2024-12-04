@@ -1,17 +1,19 @@
-// celing of the number(n) is a number which is greater then equal to a number which is close value to the n ( Cn >= n)
-
-public class BS_CeelingOfaNumber {
+// ceiling of the number(n) is a number which is greater or equal to a number which is close value to the n ( Cn >= n)
+import java.util.*;
+public class BS_CeilingOfaNumber {
 
     public static void main(String[] args) {
 
-        int [] arr ={2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
-        int tar = 6;
+        int [] arr ={2,3,4,6,9,10,13,14,16};
+        int tar = 12;
 
-        System.out.println(binarySearch(arr,tar));
+        int out = ceiling(arr,tar);
+
+        System.out.println(arr[out]);
 
     }
 
-    static int binarySearch(int[] arr, int target){
+    static int ceiling(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;
 
@@ -27,7 +29,7 @@ public class BS_CeelingOfaNumber {
                 return mid;
             }
         }
-        return -1;
+        return start;
     }
 
 }

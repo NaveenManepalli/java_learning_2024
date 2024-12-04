@@ -1,8 +1,6 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class RC_Permutation_Maze_Path_Board_AllPath_ArrayList {
+public class RC_BackTracking_Maze_Path_Board_AllPath_ArrayList {
 
     public static void main(String[] args) {
 
