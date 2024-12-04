@@ -5,6 +5,10 @@ public class OOPS_box {
     double h;
     double w;
 
+    public double getL(){
+        return l;
+    }
+
     OOPS_box(){
         this.h =-1;
         this.l = -1;
