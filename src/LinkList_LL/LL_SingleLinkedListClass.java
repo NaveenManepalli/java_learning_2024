@@ -11,6 +11,26 @@ public class LL_SingleLinkedListClass {
         this.size=0;
     }
 
+// Single linked list node-----------------------------------START---------------------------------------------------------
+    private class Node{
+        private int value;
+        private Node next;
+
+
+        public Node(int value) {
+            this.value = value;
+        }
+
+        public Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
+    }
+
+// Single linked list node---------------------------------------------END-------------------------------------------------
+
+
+//Single linked list adding value__________________________START___________________________________________________________
     //inserting value in first
 
     public void insertFirst(int val){
@@ -58,17 +78,9 @@ public class LL_SingleLinkedListClass {
         size++;
     }
 
-    public int deleteLast(){
-        if(size<=1){
-            return deleteFirst();
-        }
-        Node secondLast = get(size-2);
-        int val = tail.value;
-        tail = secondLast;
-        tail.next =null;
-        return val;
-    }
+// Single linked list adding the value---------------------------------END-------------------------------------------------
 
+//getting the indexed value node -----------------------START-------------------------------------------------------------
     public Node get(int index){
         Node node = head;
         for(int i=0;i<index;i++){
@@ -76,6 +88,7 @@ public class LL_SingleLinkedListClass {
         }
         return node;
     }
+//getting the indexed value node -------------------------END-------------------------------------------------------------
 
     public int deleteFirst(){
         int val = head.value;
@@ -84,6 +97,19 @@ public class LL_SingleLinkedListClass {
             tail=null;
         }
         size--;
+        return val;
+    }
+
+// Single linked list deleting the value-----------------------------START-------------------------------------------------
+
+    public int deleteLast(){
+        if(size<=1){
+            return deleteFirst();
+        }
+        Node secondLast = get(size-2);
+        int val = tail.value;
+        tail = secondLast;
+        tail.next =null;
         return val;
     }
 
@@ -103,7 +129,9 @@ public class LL_SingleLinkedListClass {
         return val;
     }
 
-// finding the value
+// Single linked list deleting the value-----------------------------END-------------------------------------------------
+
+// finding the value------------------------------------------------START-------------------------------------------------
     public Node find(int value){
         Node node = head;
         while(node != null){
@@ -115,6 +143,9 @@ public class LL_SingleLinkedListClass {
         return node;
     }
 
+// finding the value--------------------------------------------------END-------------------------------------------------
+
+//finally displaying the whole node-------------------------------START---------------------------------------------------
     public void display(){
         Node temp = head;
         while (temp!=null){
@@ -123,21 +154,8 @@ public class LL_SingleLinkedListClass {
         }
         System.out.print("END");
     }
+//finally displaying the whole node-------------------------------------END----------------------------------------------
 
 
 
-    private class Node{
-        private int value;
-        private Node next;
-
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
-        }
-    }
 }
