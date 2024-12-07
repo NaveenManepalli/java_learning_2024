@@ -13,6 +13,9 @@ public class LL_SecondDLL {
         DLlist.display();
         DLlist.insertLast(90);
         DLlist.display();
+
+        DLlist.insert(4,34);
+        DLlist.display();
     }
 
 

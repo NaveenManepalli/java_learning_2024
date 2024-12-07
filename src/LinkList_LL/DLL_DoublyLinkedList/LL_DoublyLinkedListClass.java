@@ -1,6 +1,8 @@
 package LinkList_LL.DLL_DoublyLinkedList;
 
 
+import LinkList_LL.LL_SingleLinkedListClass;
+
 public class LL_DoublyLinkedListClass {
     private Node head;
     private Node tail;
@@ -94,8 +96,36 @@ public class LL_DoublyLinkedListClass {
         tail = node;
     }
 
+    public void insert(int after,int val){
+        Node p = find(after);
+        if(p == null){
+            System.out.println("value does not exist");
+            return;
+        }
+        Node node = new Node(val);
+        node.next = p.next;
+        p.next = node;
+        node.prev=p;
+        if(node.next!=null) {
+            node.next.prev = node;
+        }
+    }
 
 
+
+    // finding the value------------------------------------------------START-------------------------------------------------
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return node;
+    }
+
+// finding the value--------------------------------------------------END-------------------------------------------------
 
 
 
