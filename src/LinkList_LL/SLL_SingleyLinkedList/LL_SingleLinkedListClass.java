@@ -1,4 +1,4 @@
-package LinkList_LL;
+package LinkList_LL.SLL_SingleyLinkedList;
 
 public class LL_SingleLinkedListClass {
 
@@ -80,6 +80,32 @@ public class LL_SingleLinkedListClass {
 
 // Single linked list adding the value---------------------------------END-------------------------------------------------
 
+
+//LinkedList Recursion -------------------------------------------START---------------------------------------------------
+
+//insert using recursion
+    public void insertRec(int val , int index){
+
+        head = insertRec(val,index,head);
+
+    }
+    private Node insertRec(int val , int index , Node node){
+        if (index == 0){
+            Node temp = new Node(val,node);
+            size++;
+            return temp;
+        }
+        node.next =insertRec(val, --index ,node.next);
+        return node;
+    }
+
+
+
+
+
+//LinkedList Recursion ---------------------------------------------END---------------------------------------------------
+
+
 //getting the indexed value node -----------------------START-------------------------------------------------------------
     public Node get(int index){
         Node node = head;
@@ -89,6 +115,10 @@ public class LL_SingleLinkedListClass {
         return node;
     }
 //getting the indexed value node -------------------------END-------------------------------------------------------------
+
+
+// Single linked list deleting the value-----------------------------START-------------------------------------------------
+
 
     public int deleteFirst(){
         int val = head.value;
@@ -100,7 +130,6 @@ public class LL_SingleLinkedListClass {
         return val;
     }
 
-// Single linked list deleting the value-----------------------------START-------------------------------------------------
 
     public int deleteLast(){
         if(size<=1){

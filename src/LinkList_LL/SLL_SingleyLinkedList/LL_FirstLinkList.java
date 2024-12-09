@@ -1,4 +1,4 @@
-package LinkList_LL;
+package LinkList_LL.SLL_SingleyLinkedList;
 
 public class LL_FirstLinkList {
     public static void main(String[] args) {
@@ -18,6 +18,10 @@ public class LL_FirstLinkList {
         list.display();
         System.out.println();
         System.out.println(list.delete(2));
+        list.display();
+        System.out.println();
+        list.insertRec(66,2);
+        System.out.println();
         list.display();
     }
 

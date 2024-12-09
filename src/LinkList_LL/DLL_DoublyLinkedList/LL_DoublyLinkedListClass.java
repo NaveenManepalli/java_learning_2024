@@ -1,8 +1,6 @@
 package LinkList_LL.DLL_DoublyLinkedList;
 
 
-import LinkList_LL.LL_SingleLinkedListClass;
-
 public class LL_DoublyLinkedListClass {
     private Node head;
     private Node tail;
