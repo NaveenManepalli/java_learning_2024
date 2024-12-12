@@ -263,6 +263,48 @@ public class SLL {
         ans.display();
     }
 
+    //141.LinkedList cycle(CYCLIC SORT)
+    public static boolean hasCycle(Node head){
+        Node fast = head;
+        Node slow = head;
+
+        while (fast!= null && fast.next !=null){
+            fast = fast.next.next;
+            slow =slow.next;
+            if(fast==slow){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //length of list cycle
+
+    public static int lengthCycle(Node head){
+        Node fast = head;
+        Node slow = head;
+
+        while (fast!= null && fast.next !=null){
+            fast = fast.next.next;
+            slow =slow.next;
+            if(fast==slow){
+                //calculateLength
+                Node temp =slow;
+                int length=0;
+                do{
+                    temp= temp.next;
+                    length++;
+                }while (temp!=slow);
+                return length;
+            }
+        }
+        return 0;
+    }
+
+
+
+
+
 
 //question--------------------------END------------------------------------------------------------------------------------
 //public static void main
