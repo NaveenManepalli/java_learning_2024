@@ -263,7 +263,6 @@ public class SLL {
         ans.display();
     }
 
-    //141.LinkedList cycle(CYCLIC SORT)
     public static boolean hasCycle(Node head){
         Node fast = head;
         Node slow = head;
@@ -300,11 +299,6 @@ public class SLL {
         }
         return 0;
     }
-
-
-
-
-
 
 //question--------------------------END------------------------------------------------------------------------------------
 //public static void main
