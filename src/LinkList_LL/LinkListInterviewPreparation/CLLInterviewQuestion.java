@@ -79,6 +79,50 @@ public class CLLInterviewQuestion {
         return s;
     }
 
+    //202.Happy Number
+
+    public  boolean isHappy(int n){
+        int slow = n;
+        int fast = n;
+
+        do{
+            slow =finSqu(slow);
+            fast = finSqu(finSqu(fast));
+        }while (slow!=fast);
+
+        if(slow==1){
+            return true;
+        }
+        return false;
+
+    }
+    private int finSqu(int num){
+        int ans = 0;
+        while (num>0){
+
+            int rem = num % 10;
+            ans +=rem*rem;
+            num/=10;
+        }
+        return ans;
+    }
+
+    /*    public static void main(String[] args) {
+       System.out.println( isHappy(36));
+    }*/
+
+    //876.Middle of the linked list
+    public ListNode middleNode(ListNode head){
+        ListNode s = head;
+        ListNode f = head;
+        while (f!=null&&f.next!=null){
+            s= s.next;
+            f= f.next.next;
+        }return s;
+    }
+
+    //148.Sort List
+
 
 }
 class ListNode{
