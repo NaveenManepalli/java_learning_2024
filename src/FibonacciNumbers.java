@@ -7,6 +7,7 @@ public class FibonacciNumbers {
             int next = first + second;
             first = second;
             second = next;
+
         }
     }
 }
