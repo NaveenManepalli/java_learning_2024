@@ -20,4 +20,4 @@ public class Math_Prime  {
         }
         return true;
     }
-}//arrray&arrayListquestion
+}//arrray&arrayListquestion.
