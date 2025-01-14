@@ -13,4 +13,4 @@ public class PrimeCheck {
         System.out.println(isPrime(17)); // Output: true
         System.out.println(isPrime(15)); // Output: false
     }
-}
+}//

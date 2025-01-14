@@ -13,4 +13,4 @@ public class Factors {
     public static void main(String[] args) {
         findFactors(28); // Output: 1 28 2 14 4 7
     }
-}
+}//

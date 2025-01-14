@@ -16,7 +16,7 @@ public class SquareRootBinarySearch {
         }
         return ans;
     }
-
+//
     public static void main(String[] args) {
         System.out.println(squareRoot(25)); // Output: 5
         System.out.println(squareRoot(27)); // Output: 5

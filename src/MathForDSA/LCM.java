@@ -13,4 +13,4 @@ public class LCM {
     public static void main(String[] args) {
         System.out.println(lcm(28, 35)); // Output: 140
     }
-}
+}//

@@ -14,7 +14,7 @@ public class SieveOfEratosthenes {
                     isPrime[j] = false;
                 }
             }
-        }
+        }//
 
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) System.out.print(i + " ");

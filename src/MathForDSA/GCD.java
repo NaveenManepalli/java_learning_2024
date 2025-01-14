@@ -9,4 +9,4 @@ public class GCD {
     public static void main(String[] args) {
         System.out.println(gcd(28, 35)); // Output: 7
     }
-}
+}//
