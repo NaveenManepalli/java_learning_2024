@@ -1,7 +1,9 @@
+package Patterns;
+//nXn square
 public class Pattern_2 {
     public static void main(String[] args) {
 
-        pattern2(12);
+        pattern2(4);
 
     }
     static void pattern2(int num){

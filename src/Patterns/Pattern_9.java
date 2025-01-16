@@ -1,3 +1,5 @@
+package Patterns;
+//numbers decrease as you move toward the edges and increase toward the center(minimum distance from the edges.)
 public class Pattern_9 {
 
     public static void main(String[] args) {

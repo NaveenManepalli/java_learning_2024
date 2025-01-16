@@ -1,3 +1,5 @@
+package Patterns;
+//dic inc pyramid
 public class Pattern_7 {
     public static void main(String[] args) {
 
