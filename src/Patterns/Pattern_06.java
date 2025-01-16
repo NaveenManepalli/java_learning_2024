@@ -1,6 +1,6 @@
 package Patterns;
 //diamond
-public class Pattern_6 {
+public class Pattern_06 {
 
     public static void main(String[] args) {
         pattern6(4);

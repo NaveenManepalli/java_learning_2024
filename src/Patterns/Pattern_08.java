@@ -1,6 +1,6 @@
 package Patterns;
 //dic inc diamond
-public class Pattern_8 {
+public class Pattern_08 {
     public static void main(String[] args) {
 
         pattern8(5);

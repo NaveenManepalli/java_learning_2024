@@ -1,6 +1,6 @@
 package Patterns;
 //dic inc pyramid
-public class Pattern_7 {
+public class Pattern_07 {
     public static void main(String[] args) {
 
         pattern7(5);

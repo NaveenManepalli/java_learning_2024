@@ -1,19 +1,20 @@
 package Patterns;
-//SimpleTriangle
-public class Pattern_1 {
+//simple triangle with number incriment
+public class Pattern_04 {
 
     public static void main(String[] args) {
-        pattern1(4);
+        pattern4(4);
 
     }
-    static void pattern1(int num){
+    static void pattern4(int num){
         for(int row =1; row<= num; row++){
             //for every row, run the col
             for(int col =1; col<=row;col++){
-                System.out.print("* ");
+                System.out.print(col +" ");
             }
             //when one row is printed completely need to create a new line
             System.out.println();
         }
     }
 }
+
